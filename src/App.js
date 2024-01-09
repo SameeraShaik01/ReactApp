@@ -24,13 +24,21 @@ import './App.css';
 // }
 
 // export default App;
-import Myfisrtapp from  './build-component/build_component';
-function Importing()
+// import Myfisrtapp from  './build-component/build_component';
+// function Importing()
+// {
+//   return(<Myfisrtapp/>)
+// }
+// export default Importing;
+// //testing
+// //testing2
+// //testing3
+// //testing4
+import { BuildComponent2 } from './buildcomponent2/buildcomponent2';
+function ImportBC2()
 {
-  return(<Myfisrtapp/>)
+  return(
+    <BuildComponent2/>
+  )
 }
-export default Importing;
-//testing
-//testing2
-//testing3
-//testing4
+export default ImportBC2
