@@ -1,7 +1,7 @@
  // eslint-disable-next-line
 import logo from './logo.svg';
 import './App.css';
-
+import Theme from './taskday9';
 // function App() {
 //   return (
 //     <div className="App">
@@ -34,11 +34,17 @@ import './App.css';
 // //testing2
 // //testing3
 // //testing4
-import { BuildComponent2 } from './buildcomponent2/buildcomponent2';
+//  firstClass from './buildcomponent2/buildcomponent2';
+import FirstClass from './buildcomponent2/buildcomponent2';
+import { ImageAlter } from './imagealter/imagealter';
 function ImportBC2()
 {
   return(
-    <BuildComponent2/>
+    <>
+    <FirstClass/>
+    <Theme/>
+    <ImageAlter/>
+    </>
   )
 }
 export default ImportBC2
