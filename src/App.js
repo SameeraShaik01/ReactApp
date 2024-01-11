@@ -37,6 +37,7 @@ import Theme from './taskday9';
 //  firstClass from './buildcomponent2/buildcomponent2';
 import FirstClass from './buildcomponent2/buildcomponent2';
 import { ImageAlter } from './imagealter/imagealter';
+import { ApiCall } from './exception/exception';
 function ImportBC2()
 {
   return(
@@ -44,6 +45,7 @@ function ImportBC2()
     <FirstClass/>
     <Theme/>
     <ImageAlter/>
+    <ApiCall/>
     </>
   )
 }
