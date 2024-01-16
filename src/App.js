@@ -35,17 +35,19 @@ import Theme from './taskday9';
 // //testing3
 // //testing4
 //  firstClass from './buildcomponent2/buildcomponent2';
-import FirstClass from './buildcomponent2/buildcomponent2';
-import { ImageAlter } from './imagealter/imagealter';
-import { ApiCall } from './exception/exception';
+// import FirstClass from './buildcomponent2/buildcomponent2';
+// import { ImageAlter } from './imagealter/imagealter';
+// import { ApiCall } from './exception/exception';
+import { BootStrap } from './bootstrap/bootstrap';
 function ImportBC2()
 {
   return(
     <>
-    <FirstClass/>
+    {/* <FirstClass/>
     <Theme/>
     <ImageAlter/>
-    <ApiCall/>
+    <ApiCall/> */}
+    <BootStrap/>
     </>
   )
 }
