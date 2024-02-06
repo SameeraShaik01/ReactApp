@@ -1,7 +1,8 @@
  // eslint-disable-next-line
 import logo from './logo.svg';
 import './App.css';
-import Theme from './taskday9';
+// import Theme from './taskday9';
+import { Table } from './day12task/task1';
 // function App() {
 //   return (
 //     <div className="App">
@@ -39,16 +40,38 @@ import Theme from './taskday9';
 // import { ImageAlter } from './imagealter/imagealter';
 // import { ApiCall } from './exception/exception';
 import { BootStrap } from './bootstrap/bootstrap';
+import { Header } from './day12task/header';
+import { UseStateEx } from './hooks/usestate';
+import { UseStateEx1 } from './hooks/usestate1';
+import { FormUseRef } from './hooks/formvalidity';
+import { AddCircle } from './hooks/addcircle';
+import { Counter } from './lifecyclemethods/mount';
+import Loader from './lifecyclemethods/loader';
+import { UpdatePhase } from './lifecyclemethods/updatePhase/render';
+import { Unmounting } from './lifecyclemethods/unmounting/unmount';
+
 function ImportBC2()
 {
+  const greenColor="green"
   return(
     <>
     {/* <FirstClass/>
     <Theme/>
     <ImageAlter/>
     <ApiCall/> */}
+    {/* <Header/>
     <BootStrap/>
+    <Table/> */}
+    {/* <UseStateEx/> */}
+    {/* <UseStateEx1/> */}
+    {/* <FormUseRef></FormUseRef> */}
+    {/* <AddCircle/> */}
+    
+    {/* <Counter color={greenColor}/> */}
+    {/* <Loader/> */}
+    {/* <UpdatePhase favColor={greenColor}/> */}
+    <Unmounting/>
     </>
-  )
+  ) 
 }
 export default ImportBC2
