@@ -34,8 +34,25 @@ shouldComponentUpdate()
 {
     return true
 }
+// componentDidUpdate(prevProps, prevState) {
+//     if (this.state.data.length === 0) { // or compare with `prevState`
+//       // make the api call
+//       document.title=`counter value${this.state.counter}`
+//           fetch(`https://jsonplaceholder.typicode.com/posts/${this.state.counter}`).then(response=>response.json())
+//               .then(response=>{
+//                   console.log(response)
+//                   this.setState(
+//                       {
+//                          singlePost:response
+//                       }
+//                   )
+                  
+//               })
+//     }
+//   }
 componentDidUpdate()
 {
+    
     document.title=`counter value${this.state.counter}`
     fetch(`https://jsonplaceholder.typicode.com/posts/${this.state.counter}`).then(response=>response.json())
         .then(response=>{
@@ -47,6 +64,7 @@ componentDidUpdate()
             )
             
         })
+       
 }
 componentDidMount(){
     document.title=`count ${this.state.counter}`
@@ -63,7 +81,7 @@ render()
         <h2 style={{color:this.state.color}}>
             {this.state.counter}
         </h2>
-        <button onClick={this.handleClick}>Increment</button>
+        <button onClick={()=>{this.handleClick()}}>Increment</button>
         {
               <h2>{this.state.singlePost?.title}</h2>
         }

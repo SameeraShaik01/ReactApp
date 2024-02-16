@@ -49,6 +49,9 @@ import { Counter } from './lifecyclemethods/mount';
 import Loader from './lifecyclemethods/loader';
 import { UpdatePhase } from './lifecyclemethods/updatePhase/render';
 import { Unmounting } from './lifecyclemethods/unmounting/unmount';
+import { UseStateEx3 } from './hooks/useStateEx';
+import ExampleComponent from './temp/data';
+import ToDoList from './toDoList';
 
 function ImportBC2()
 {
@@ -70,7 +73,11 @@ function ImportBC2()
     {/* <Counter color={greenColor}/> */}
     {/* <Loader/> */}
     {/* <UpdatePhase favColor={greenColor}/> */}
-    <Unmounting/>
+    {/* <Unmounting/> */}
+    {/* <UseStateEx3/> */}
+
+    {/*<ExampleComponent/>*/}
+    <ToDoList/>
     </>
   ) 
 }

@@ -1,0 +1,30 @@
+
+
+body{
+    background: linear-gradient(to right, hsl(240, 47%, 83%),white);
+    /* background-color: black; */
+    
+    
+}
+
+.main{
+
+    width:"50%";
+    height:"100vh";
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: "center";
+    overflow:"auto"; 
+    background:" linear-gradient(to right, #0f2027, #203a43, #2c5364)"
+    
+    
+}
+button{
+    background-color: blue;
+}
+
+.list{
+
+font-size:"40px";
+
+}
